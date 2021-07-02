@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>e-Library Template</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">e-Library Template</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#katalog" class="nav-link">Katalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontak" class="nav-link">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search -->
+    <section class="bg-light text-dark p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Dinas Perpustakaan dan Kearsipan</h3>
+
+                <div class="input-group search-input">
+                    <input type="text" class="form-control" placeholder="Masukkan kata kunci" />
+                    <button class="btn btn-dark btn-lg" type="button">Cari</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Detail -->
+    <section id="katalog" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Katalog e-Library</h2>
+            <p class="lead text-center text-white mb-5">
+                Proin id ipsum ut ex maximus rhoncus. Aliquam erat volutpat. Curabitur id hendrerit orci. Nulla facilisi.
+            </p>
+            <div class="card">
+                <div class="col-md col-lg-12">
+                    <h5 class="card-header bg-light">
+                        <a href="index.html" class="btn btn-primary">Kembali</a>
+                    </h5>
+                    <div class="card-body text-center">
+                        <img src="img/cover1.jpg" class="img-cover mt-2" alt="" />
+                        <div class="row justify-content-center mt-3">
+                            <div class="col-11 col-sm-8 col-md-6">
+                                <div class="card ">
+                                    <div class="card-block p20" style="background-color:#ddd;">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-5 col-md-4 ">Kode Produk</div>:
+                                                    <div class="col-6 col-md-7" id="kodeproduk">0024100170</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-5 col-md-4 ">Penulis</div>:
+                                                    <div class="col-6 col-md-7" id="penulis">A. Indradi &amp; Rahma Purwahida</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-5 col-md-4 ">Tahun Terbit</div>:
+                                                    <div class="col-6 col-md-7" id="tahun">2020</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="card-title mt-3">SINOPSIS</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary btn-header" data-bs-toggle="modal" data-bs-target="#readbook">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Map -->
+    <section id="kontak" class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Kontak Kami</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Alamat :</span> Jl. Lolak
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">HP / WA :</span> +62-123-456
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> dispusip@bolmongkab.go.id
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div class="container">
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!4v1625230681618!6m8!1m7!1sM2--hYFp4kqTaj9NL-VXyw!2m2!1d0.8718749703744992!2d124.0245677384924!3f182.14!4f2.530000000000001!5f2.183256560231661" width="450" height="200" style="border:0;" allowfullscreen=""
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 eGov Diskominfo Bolmong</p>
+
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="readbook" tabindex="-1" aria-labelledby="readbookLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="readbookLabel">Lihat Buku</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <a href="https://online.flippingbook.com/view/131618612/" class="fbo-embed" data-fbo-id="131618612" data-fbo-lightbox="yes" data-fbo-width="740px" data-fbo-height="480px" data-fbo-version="1" style="max-width: 100%">Books Modal</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+                    <a class="btn btn-primary" href="book-detail.html" role="button">Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=131618612"></script>
+
+</body>
+
+</html>
